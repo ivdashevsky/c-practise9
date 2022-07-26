@@ -3,7 +3,6 @@
 string numbers(int m, int n)
 {
     return (m == n && m != 0 && m > 0) ? n.ToString() : 
-           (m < 0) ? numbers(1,n) :
            (m < n && m > 0 && n > 0) ? m.ToString() + " " + numbers(m+=1,n) :
            ((m < 0) | (m < n && m == 0 && n > 0)) ? numbers(1,n) : 
            "No numbers";
